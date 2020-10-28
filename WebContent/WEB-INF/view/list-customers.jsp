@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<title>Web Customer Tracker- Customer List</title>
-		<!-- refernce to css files -->
+		<!-- reference to css files -->
 		<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/styles.css" />
 	</head>
 	<body>
@@ -15,6 +15,13 @@
 		</div>
 		<div id="container">
 			<div id="content">
+				
+				<!-- Button to add new customer -->
+				<input type="button" value="Add Customer" 
+					onclick="window.location.href='showCustomerForm'"
+					class="add-button"
+				/>
+				<!-- List of Customers -->
 				<table>
 					<thead>
 						<tr>

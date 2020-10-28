@@ -24,6 +24,10 @@ tr {
 	text-align: center;
 }
 
+td {
+	padding:5px;
+}
+
 tr:nth-child(even) {background: #ffffff;}
 tr:nth-child(odd) {background: #bbbbbb;}
 
@@ -32,17 +36,51 @@ tr:nth-child(odd) {background: #bbbbbb;}
 #header h2 {width: 100%; margin: auto; color: #ffffff;}
 #container {width: 100%; margin: auto;}
 #container h3 {color: #000}
-#container #content {margin-top: 20px;}
+#container #content {margin-top: 20px;width:100%;}
 
 .add-button {
 	border: 1px solid #666;
 	border-radius: 5px;
-	padding: 4px;
 	font-size: 12px;
 	font-weight: bold;
 	width: 120px;
 	padding: 5px 10px;
+	cursor: pointer;
+	margin-bottom: 15px;
+	background: #cccccc;
+}
 
+.customerForm {
+	border-collapse: unset;
+	border-bottom: none;
+	font-family: Tahoma, Verdana, Segoe, san-serif;
+	width: 50%;
+}
+
+.customerForm tr {
+	background: #ffffff;
+	border:0px solid;
+	text-align: left;
+}
+
+.customerForm td:nth-child(odd) { width:20%; text-align:right; }
+
+.customerForm input {
+	border-radius: 2px;
+	border:1px solid #666;
+	width:90%;
+}
+
+.customerForm .save {
+	border: 1px solid #666;
+	border-radius: 5px;
+	padding: 5px;
+	font-size: 15px;
+	font-weight: bold;
+	width: 80px;
+	padding: 5px 10px;
+	margin-top:20px;
+	cursor: pointer;
 	margin-bottom: 15px;
 	background: #cccccc;
 }
