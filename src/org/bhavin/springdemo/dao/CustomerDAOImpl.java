@@ -57,4 +57,18 @@ public class CustomerDAOImpl implements CustomerDAO {
 		return theCustomer;
 	}
 
+	@Override
+	public void deleteCustomer(int theId) {
+
+		// get hidernate session
+		Session currentSession = sessionFactory.getCurrentSession();
+		
+		// get object
+		Customer theCustomer = currentSession.get(Customer.class, theId);
+		
+		//delete session from database
+		currentSession.delete(theCustomer);
+		
+	}
+
 }
